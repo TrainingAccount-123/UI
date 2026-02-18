@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height: clamp(500px,100vh,9999px);
+    width: clamp(320px,100vw,9999px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+
+    min-width: 320px;
+    min-height: 500px;
+}
+
+.container{
+    padding: 40px;
+    width: clamp(300px,33.375vw,9999px);
+    height: clamp(400px,75vh,9999px);
+    text-align: center;
+    border-radius: 12px;
+    border-style: ridge;
+    border-width: 5px;
+    min-width: 300px;
+    min-height: 400px;
+}
+
+.container h1{
+    font-size: clamp(14px,2.2012vw,9999px);
+    margin-bottom: clamp(16px,4.7904vh,9999px);
+}
+
+.container h3{
+    font-size: clamp(9px,1.4151vw,9999px);
+    margin-bottom: clamp(25px,7.4850vh,9999px);
+}
+
+.container p {
+    font-size: clamp(7px,1.1006vw,9999px);
+    margin-top: clamp(11px,3.2934vh,9999px);
+}
+
+.error {
+    border-style: solid;
+    border-radius: 6px;
+    border-color: rgba(255,0,0,0.75);
+    background-color: rgba(255,0,0,0.25);
+    color: rgba(255,0,0,1);
+    display: none;
+    font-weight: normal;
+    margin-bottom: clamp(5px,1.497vh,9999px);
+
+}
+
+.error p {
+    font-size: clamp(7px,1.1006vw,9999px);
+    display: block;
+    margin-top: 0;
+}
+
+.loginInputs {
+    color: black;
+    border-style: solid;
+    border-radius: 12px;
+    border-width: 1px;
+    border-color: rgba(64,64,64,0.75);
+    padding: 7px;
+    width: 100%;
+    font-size: clamp(8px,1.3365vw,9999px);
+    margin-bottom: clamp(7px,2.2455vh,9999px);
+}
+
+.loginLabels{
+    display: block;
+    text-align: left;
+    font-weight: normal;
+    margin-bottom: clamp(3px,0.8982vh,9999px);
+    font-size: clamp(7px,1.1792vw,9999px);
+    margin-top: clamp(5px,1.497vh,9999px);
+}
+
+button{
+    margin-top: clamp(7px,2.2455vh,9999px);
+    margin-bottom: clamp(3px,0.7485vh,9999px);
+    background : blue;
+    color: white;
+    width: 50%;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: clamp(7px,1.1006vw,9999px);
+    font-weight: bold;
+    padding: 15px;
+    border: none;
+}
+
+button:hover{
+    background: white;
+    color: blue;
+    border: solid blue
+}
