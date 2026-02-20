@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    min-width: 465px;
+
+}
+
+.page, .logo {
+    flex:1
+}
+
+.page .header{
+    margin-bottom: 10vh;
+    margin-top: 8vh;
+    margin-left: 4vw;
+    align-items: baseline;
+    border: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.page .headerCircle{
+    border-radius: 50%;
+    border-style: solid;
+    background-color: black;
+    height: clamp(8px,1.955vh,9999px);
+    width: clamp(8px,1.955vh,9999px);
+    margin-right: 0.65vw;
+}
+
+.page .header h1{
+    font-weight: bold;
+    font-size: clamp(10px,3vh,9999px);
+    color: black;
+}
+
+.page .loginElements {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+    width: 75%;
+    height: 50%;
+    margin-left: 6vw;
+    padding-top: 25%;
+    margin-right: 24vw;
+}
+
+.loginElements h1 {
+    text-align: left;
+    font-weight: bold;
+}
+.loginElements h4 {
+    text-align: left;
+    font-weight: lighter;
+    color: rgba(100,100,100,0.65);
+    margin-bottom: 2vh;
+}
+
+.loginElements .inputs {
+    margin-bottom: 2vh;
+    padding: 10px;
+    margin-top: 1vh;
+    border-radius: 8px;
+    border-color: rgba(100,100,100,0.5);
+    border-width: 1px;
+}
+
+.loginElements .labels {
+    font-weight: bold;
+    font-size: small;
+}
+
+.loginElements .forgetAndRemember{
+    display: flex;
+    flex-direction: row;
+    font-size: small;
+    justify-content: left;
+    margin-bottom: 2vh;
+}
+
+#rememberFor30Days{
+    margin-right: 5px;
+}
+
+#forgotPass {
+    margin-left: auto;
+    text-decoration: none;
+}
+
+#signInBtn {
+    background-color: blueviolet;
+    color: white;
+    border-style: none;
+    border-radius: 12px;
+    padding: 2vh 1vw;
+    margin-bottom: 1.5vh;
+}
+
+#signInBtn:hover {
+    background-color: white;
+    color: blueviolet;
+    border-style: solid;
+    border-color: blueviolet;
+    border-width: 1px;
+}
+
+#signInWithGoogle {
+    background-color: white;
+    color: black;
+    border-style: solid;
+    border-radius: 12px;
+    border-width: 1px;
+    border-color: black;
+    padding: 2vh 1vw;
+}
+
+#signInWithGoogle:hover {
+    background-color: black;
+    color: white;
+}
+
+.logo {
+    background-color: rgba(127,200,212,0.25);
+    justify-items: center;
+    align-content: center;
+    position: relative;
+}
+
+.logo .circle {
+    border-radius: 50%;
+    border-style: solid;
+    border-color: blueviolet;
+    background-color: blueviolet;
+    height: clamp(50px,25vh,9999px);
+    width: clamp(50px,25vh,9999px);
+    z-index: 999;
+    
+}
+
+.logo .bottom {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    backdrop-filter: blur(8px);
+    z-index: 1000;
+}
